@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ec.udla.zodiaco.vista.VentanaSantuario">
+  <grid id="27dc6" binding="panelRaiz" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="6">
+    <margin top="0" left="0" bottom="6" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="940" height="620"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="a1b2c" binding="panelEncabezado" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="2">
+        <margin top="12" left="16" bottom="12" right="16"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-15129274"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="11111" class="javax.swing.JLabel" binding="lblTituloBanner">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="SansSerif" size="20" style="1"/>
+              <foreground color="-1196215"/>
+              <text value="SANTUARIO DE ATENA · Rol de Misiones"/>
+            </properties>
+          </component>
+          <component id="11112" class="javax.swing.JLabel" binding="lblSubtituloBanner">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="SansSerif" size="12" style="0"/>
+              <foreground color="-2039584"/>
+              <text value="Registro de caballeros, misiones, aporte al Fondo del Santuario e impuesto del Reino"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <tabbedpane id="22221" binding="pestanas">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="33331" binding="tabRegistro" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="12" vgap="10">
+            <margin top="12" left="14" bottom="10" right="14"/>
+            <constraints>
+              <tabbedpane title="1. Registrar / Modificar"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="44441" layout-manager="GridLayoutManager" row-count="8" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="10" vgap="8">
+                <margin top="10" left="12" bottom="10" right="12"/>
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="etched" title="Datos del caballero y de su misión"/>
+                <children>
+                  <component id="5001" class="javax.swing.JLabel">
+                    <constraints><grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/></constraints>
+                    <properties><text value="ID del caballero *"/></properties>
+                  </component>
+                  <component id="5002" class="javax.swing.JTextField" binding="txtId">
+                    <constraints><grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/></constraints>
+                    <properties/>
+                  </component>
+                  <component id="5003" class="javax.swing.JLabel">
+                    <constraints><grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/></constraints>
+                    <properties><text value="Nombre *"/></properties>
+                  </component>
+                  <component id="5004" class="javax.swing.JTextField" binding="txtNombre">
+                    <constraints><grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/></constraints>
+                    <properties/>
+                  </component>
+                  <component id="5005" class="javax.swing.JLabel">
+                    <constraints><grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/></constraints>
+                    <properties><text value="Rango *"/></properties>
+                  </component>
+                  <component id="5006" class="javax.swing.JComboBox" binding="cmbRango">
+                    <constraints><grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/></constraints>
+                    <properties/>
+                  </component>
+                  <component id="5007" class="javax.swing.JLabel">
+                    <constraints><grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/></constraints>
+                    <properties><text value="Constelación *"/></properties>
+                  </component>
+                  <component id="5008" class="javax.swing.JTextField" binding="txtConstelacion">
+                    <constraints><grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/></constraints>
+                    <properties/>
+                  </component>
+                  <component id="5009" class="javax.swing.JLabel">
+                    <constraints><grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/></constraints>
+                    <properties><text value="Nivel de poder (1-10) *"/></properties>
+                  </component>
+                  <component id="5010" class="javax.swing.JSpinner" binding="spnPoder">
+                    <constraints><grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/></constraints>
+                    <properties/>
+                  </component>
+                  <component id="5011" class="javax.swing.JLabel">
+                    <constraints><grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/></constraints>
+                    <properties><text value="Misión asignada *"/></properties>
+                  </component>
+                  <component id="5012" class="javax.swing.JTextField" binding="txtMision">
+                    <constraints><grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/></constraints>
+                    <properties/>
+                  </component>
+                  <component id="5013" class="javax.swing.JLabel">
+                    <constraints><grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/></constraints>
+                    <properties><text value="Dificultad de la misión (1-5) *"/></properties>
+                  </component>
+                  <component id="5014" class="javax.swing.JSpinner" binding="spnDificultad">
+                    <constraints><grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/></constraints>
+                    <properties/>
+                  </component>
+                  <component id="5015" class="javax.swing.JLabel">
+                    <constraints><grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/></constraints>
+                    <properties><text value="Recompensa (monedas doradas) *"/></properties>
+                  </component>
+                  <component id="5016" class="javax.swing.JTextField" binding="txtRecompensa">
+                    <constraints><grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/></constraints>
+                    <properties/>
+                  </component>
+                </children>
+              </grid>
+              <grid id="44442" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="10">
+                <margin top="12" left="14" bottom="12" right="14"/>
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="250" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+                <border type="etched" title="Vista previa"/>
+                <children>
+                  <component id="6001" class="javax.swing.JLabel" binding="lblEscudo">
+                    <constraints><grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/></constraints>
+                    <properties><text value=""/></properties>
+                  </component>
+                  <component id="6002" class="javax.swing.JLabel" binding="lblRangoPreview">
+                    <constraints><grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/></constraints>
+                    <properties><text value="Rango: Bronce"/></properties>
+                  </component>
+                  <component id="6003" class="javax.swing.JLabel" binding="lblCalculoPreview">
+                    <constraints><grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="1" indent="0" use-parent-layout="false"/></constraints>
+                    <properties><text value="&lt;html&gt;Ingrese la recompensa para ver el aporte, el impuesto y la neta.&lt;/html&gt;"/></properties>
+                  </component>
+                  <vspacer id="6004">
+                    <constraints><grid row="3" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/></constraints>
+                  </vspacer>
+                </children>
+              </grid>
+              <grid id="44443" layout-manager="GridLayoutManager" row-count="1" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="8" vgap="-1">
+                <margin top="2" left="0" bottom="2" right="0"/>
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="1" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <hspacer id="7001">
+                    <constraints><grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/></constraints>
+                  </hspacer>
+                  <component id="7002" class="javax.swing.JButton" binding="btnBuscarId">
+                    <constraints><grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/></constraints>
+                    <properties><text value="Buscar por ID"/></properties>
+                  </component>
+                  <component id="7003" class="javax.swing.JButton" binding="btnLimpiar">
+                    <constraints><grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/></constraints>
+                    <properties><text value="Limpiar"/></properties>
+                  </component>
+                  <component id="7004" class="javax.swing.JButton" binding="btnModificar">
+                    <constraints><grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/></constraints>
+                    <properties><text value="Modificar"/></properties>
+                  </component>
+                  <component id="7005" class="javax.swing.JButton" binding="btnRegistrar">
+                    <constraints><grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/></constraints>
+                    <properties><text value="Registrar"/></properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="33332" binding="tabListado" layout-manager="GridLayoutManager" row-count="2" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="8" vgap="8">
+            <margin top="10" left="12" bottom="10" right="12"/>
+            <constraints>
+              <tabbedpane title="2. Listado de caballeros"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <scrollpane id="8001">
+                <constraints><grid row="0" column="0" row-span="1" col-span="3" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/></constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="8002" class="javax.swing.JTable" binding="tblCaballeros">
+                    <constraints/>
+                    <properties/>
+                  </component>
+                </children>
+              </scrollpane>
+              <component id="8003" class="javax.swing.JLabel" binding="lblResumenListado">
+                <constraints><grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/></constraints>
+                <properties><text value="0 caballero(s) registrado(s)"/></properties>
+              </component>
+              <hspacer id="8004">
+                <constraints><grid row="1" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/></constraints>
+              </hspacer>
+              <component id="8005" class="javax.swing.JButton" binding="btnEditarSeleccionado">
+                <constraints><grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/></constraints>
+                <properties><text value="Editar seleccionado"/></properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="33333" binding="tabInforme" layout-manager="GridLayoutManager" row-count="3" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="8" vgap="8">
+            <margin top="10" left="12" bottom="10" right="12"/>
+            <constraints>
+              <tabbedpane title="3. Informe financiero"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="9001" class="javax.swing.JLabel">
+                <constraints><grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/></constraints>
+                <properties><text value="Cálculo del impuesto:"/></properties>
+              </component>
+              <component id="9002" class="javax.swing.JComboBox" binding="cmbMetodoImpuesto">
+                <constraints><grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/></constraints>
+                <properties/>
+              </component>
+              <component id="9003" class="javax.swing.JButton" binding="btnGenerarInforme">
+                <constraints><grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/></constraints>
+                <properties><text value="Generar informe"/></properties>
+              </component>
+              <hspacer id="9004">
+                <constraints><grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/></constraints>
+              </hspacer>
+              <scrollpane id="9005">
+                <constraints><grid row="1" column="0" row-span="1" col-span="4" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/></constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="9006" class="javax.swing.JTable" binding="tblInforme">
+                    <constraints/>
+                    <properties/>
+                  </component>
+                </children>
+              </scrollpane>
+              <component id="9007" class="javax.swing.JLabel" binding="lblTotalesInforme">
+                <constraints><grid row="2" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/></constraints>
+                <properties><text value="TOTALES  Recompensas: 0.00 | Aportes: 0.00 | Impuestos: 0.00 | Neto: 0.00"/></properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </tabbedpane>
+      <component id="99991" class="javax.swing.JLabel" binding="lblEstado">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="SansSerif" size="12" style="1"/>
+          <text value=" "/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
